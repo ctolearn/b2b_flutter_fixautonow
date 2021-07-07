@@ -1,0 +1,40 @@
+class ReceiveBooking{
+  String company_buyer_id;
+  String timestamp;
+  String booking_id;
+  String vehicle_type;
+  String vehicle_make;
+  String vehicle_model;
+  String vehicle_year;
+
+  String plate_number;
+  String real;
+  String no_range;
+  String max_price;
+  String min_price;
+  String date;
+  String time;
+  String is_realtime;
+  String ref;
+  String is_sent;
+  String status;
+  ReceiveBooking.fromJson(Map<String,dynamic> json):
+    company_buyer_id= json["company_buyer_id"],
+    timestamp= json["timestamp"],
+    booking_id= json["booking_id"],
+    vehicle_type= json["vehicle_type"],
+    vehicle_make= json["vehicle_make"],
+    vehicle_model= json["vehicle_model"],
+    vehicle_year= json["vehicle_year"],
+    plate_number= json["plate_number"],
+    real= json["real"],
+    no_range= json["no_range"],
+    max_price= json["max_price"],
+    min_price= json["min_price"],
+    date= json["date"],
+    time= json["time"],
+    is_realtime= json["is_realtime"],
+    ref= json["ref"],
+    is_sent= json["is_sent"],
+    status= json["status"];
+}
